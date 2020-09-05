@@ -5,7 +5,6 @@ using UnityEngine;
 [ExecuteInEditMode]
 public abstract class AbstractMeshGenerator : MonoBehaviour
 {
-
     protected List<Vector3> vertices;
     protected List<int> indices;
 
@@ -23,7 +22,7 @@ public abstract class AbstractMeshGenerator : MonoBehaviour
     private MeshCollider meshCollider;
     private Mesh mesh;
 
-    private void OnEnable() 
+    private void Start() 
     {
         meshFilter = GetComponent<MeshFilter>();
         mesh = new Mesh();

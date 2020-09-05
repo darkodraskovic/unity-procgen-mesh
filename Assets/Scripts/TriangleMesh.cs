@@ -1,7 +1,6 @@
-﻿using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class AllTheTriangles : AbstractMeshGenerator
+public class TriangleMesh : AbstractMeshGenerator
 {
     [SerializeField] Vector3[] vs = new Vector3[3];
     [SerializeField] private bool reverseTriangle;
@@ -33,24 +32,12 @@ public class AllTheTriangles : AbstractMeshGenerator
         indices.Add(2);
     }
 
-    protected override void SetNormals()
-    {
+    protected override void SetNormals(){}
 
-    }
+    protected override void SetTangents(){}
 
-    protected override void SetTangents()
-    {
+    protected override void SetUVs(){}
 
-    }
-
-    protected override void SetUVs()
-    {
-
-    }
-
-    protected override void SetVertexColors()
-    {
-
-    }
+    protected override void SetVertexColors(){}
 
 }
